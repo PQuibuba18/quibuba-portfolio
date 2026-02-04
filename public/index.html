@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Moisés Quibuba - Desenvolvedor de Software especializado em Node.js, React, JavaScript e MySQL. Desenvolvedor Full Stack com foco em soluções escaláveis.">
+  <title>Moisés Quibuba | Desenvolvedor de Software Full Stack</title>
+  <link rel="stylesheet" href="/public/assets/css/styles.css">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for Professional Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+
+</head>
+<body class="dark">
+  
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <a href="#home" class="logo">&lt;MQ/&gt;</a>
+      
+      <nav class="nav-desktop">
+        <a href="#home">Home</a>
+        <a href="#skills">Expertise</a>
+        <a href="#experience">Experiência</a>
+        <a href="#projects">Projetos</a>
+        <a href="#contact">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+          <i class="fas fa-sun"></i>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="nav-mobile" id="navMobile">
+    <a href="#home"><i class="fas fa-home"></i> Home</a>
+    <a href="#skills"><i class="fas fa-code"></i> Expertise</a>
+    <a href="#experience"><i class="fas fa-briefcase"></i> Experiência</a>
+    <a href="#projects"><i class="fas fa-folder-open"></i> Projetos</a>
+    <a href="#contact"><i class="fas fa-envelope"></i> Contato</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="fade-in">
+          Moisés Quibuba, <span style="color: #2ea043;" class="name">Quibuba</span>
+        </h1>
+        <p class="title fade-in delay-1">
+          Desenvolvedor de Software Full Stack | Especialista em Soluções Escaláveis
+        </p>
+        <p class="hero-description fade-in delay-2">
+          Desenvolvedor Full Stack com foco em arquitetura de sistemas robustos e escaláveis. 
+          Especializado em Node.js, React e MySQL, transformo requisitos complexos em soluções 
+          tecnológicas eficientes que impulsionam o crescimento dos negócios.
+        </p>
+        
+        <div class="hero-stats fade-in delay-3">
+          <div class="stat-item">
+            <div class="stat-number">3+</div>
+            <div class="stat-label">Anos de Experiência</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Projetos Entregues</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Satisfação do Cliente</div>
+          </div>
+        </div>
+
+        <div class="hero-buttons fade-in delay-4">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-folder-open"></i>
+            Ver Projetos
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i>
+            Entre em Contato
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="code-window window-1">
+          <div class="window-header">
+            <div class="window-dot dot-red"></div>
+            <div class="window-dot dot-yellow"></div>
+            <div class="window-dot dot-green"></div>
+            <div class="window-title">server.js</div>
+          </div>
+          <div class="code-content">
+            <div class="code-line"><span class="code-keyword">const</span> express = <span class="code-function">require</span>(<span class="code-string">'express'</span>);</div>
+            <div class="code-line"><span class="code-keyword">const</span> app = <span class="code-function">express</span>();</div>
+            <div class="code-line"></div>
+            <div class="code-line">app.<span class="code-function">use</span>(express.<span class="code-function">json</span>());</div>
+            <div class="code-line"></div>
+            <div class="code-line">app.<span class="code-function">listen</span>(<span class="code-number">3000</span>, () => {</div>
+            <div class="code-line">  console.<span class="code-function">log</span>(<span class="code-string">'Server running'</span>);</div>
+            <div class="code-line">});</div>
+          </div>
+        </div>
+
+        <div class="code-window window-2">
+          <div class="window-header">
+            <div class="window-dot dot-red"></div>
+            <div class="window-dot dot-yellow"></div>
+            <div class="window-dot dot-green"></div>
+            <div class="window-title">App.jsx</div>
+          </div>
+          <div class="code-content">
+            <div class="code-line"><span class="code-keyword">import</span> React <span class="code-keyword">from</span> <span class="code-string">'react'</span>;</div>
+            <div class="code-line"></div>
+            <div class="code-line"><span class="code-keyword">function</span> <span class="code-function">App</span>() {</div>
+            <div class="code-line">  <span class="code-keyword">return</span> (</div>
+            <div class="code-line">    &lt;div&gt;</div>
+            <div class="code-line">      <span class="code-comment">// Scalable Solutions</span></div>
+            <div class="code-line">    &lt;/div&gt;</div>
+            <div class="code-line">  );</div>
+            <div class="code-line">}</div>
+          </div>
+        </div>
+
+        <div class="code-window window-3">
+          <div class="window-header">
+            <div class="window-dot dot-red"></div>
+            <div class="window-dot dot-yellow"></div>
+            <div class="window-dot dot-green"></div>
+            <div class="window-title">database.sql</div>
+          </div>
+          <div class="code-content">
+            <div class="code-line"><span class="code-keyword">CREATE TABLE</span> users (</div>
+            <div class="code-line">  id <span class="code-keyword">INT PRIMARY KEY</span>,</div>
+            <div class="code-line">  name <span class="code-keyword">VARCHAR</span>(<span class="code-number">100</span>),</div>
+            <div class="code-line">  email <span class="code-keyword">VARCHAR</span>(<span class="code-number">100</span>)</div>
+            <div class="code-line">);</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section" id="skills">
+    <div class="section-container">
+      <div class="section-header scroll-reveal">
+        <div class="section-label">// EXPERTISE TÉCNICA</div>
+        <h2 class="section-title">Stack Tecnológico</h2>
+        <p class="section-description">
+          Bases sólidas das tecnologias mais demandadas do mercado, com foco em 
+          performance, escalabilidade e boas práticas de desenvolvimento.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card scroll-reveal">
+          <div class="skill-icon">
+            <i class="fab fa-node-js"></i>
+          </div>
+          <h3 class="skill-title">Desenvolvedor Backend</h3>
+          <p class="skill-description">
+            Desenvolvimento de APIs RESTful robustas e escaláveis com Node.js e Express. 
+            Implementação de arquiteturas MVC, e integração com diversos bancos de dados.
+          </p>
+          <div class="skill-tech">
+            <span class="tech-badge">Node.js</span>
+            <span class="tech-badge">Express</span>
+            <span class="tech-badge">REST API</span>
+            <span class="tech-badge">JWT</span>
+          </div>
+        </div>
+
+        <div class="skill-card scroll-reveal">
+          <div class="skill-icon">
+            <i class="fab fa-react"></i>
+          </div>
+          <h3 class="skill-title">Desenvolvedor Frontend</h3>
+          <p class="skill-description">
+            Criação de interfaces modernas e responsivas com React. Gerenciamento de estado, 
+            otimização de performance e implementação de design systems consistentes.
+          </p>
+          <div class="skill-tech">
+            <span class="tech-badge">React</span>
+            <span class="tech-badge">Redux</span>
+            <span class="tech-badge">Hooks</span>
+            <span class="tech-badge">Material-UI</span>
+          </div>
+        </div>
+
+        <div class="skill-card scroll-reveal">
+          <div class="skill-icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <h3 class="skill-title">JavaScript Moderno</h3>
+          <p class="skill-description">
+            Expertise em ES6+, programação assíncrona, manipulação de dados e desenvolvimento 
+            de aplicações complexas com JavaScript vanilla e frameworks modernos.
+          </p>
+          <div class="skill-tech">
+            <span class="tech-badge">ES6+</span>
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">Async/Await</span>
+            <span class="tech-badge">Webpack</span>
+          </div>
+        </div>
+
+        <div class="skill-card scroll-reveal">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3 class="skill-title">Gestor de Banco de Dados</h3>
+          <p class="skill-description">
+            Administração e otimização de bancos de dados MySQL. Design de schemas eficientes, 
+            queries complexas, indexação e garantia de integridade dos dados.
+          </p>
+          <div class="skill-tech">
+            <span class="tech-badge">MySQL</span>
+            <span class="tech-badge">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card scroll-reveal">
+          <div class="skill-icon">
+            <i class="fas fa-code-branch"></i>
+          </div>
+          <h3 class="skill-title">DevOps & Tools</h3>
+          <p class="skill-description">
+            Controle de versão com Git, CI/CD, containerização com Docker e deploy em 
+            ambientes cloud. Automação de processos e garantia de qualidade.
+          </p>
+          <div class="skill-tech">
+            <span class="tech-badge">Git</span>
+            <span class="tech-badge">Docker</span>
+            <span class="tech-badge">CI/CD</span>
+            <span class="tech-badge">AWS</span>
+          </div>
+        </div>
+
+        <div class="skill-card scroll-reveal">
+          <div class="skill-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3 class="skill-title">UI/UX Design</h3>
+          <p class="skill-description">
+            Design de interfaces intuitivas e acessíveis. Prototipagem, design systems e 
+            implementação de experiências de usuário que convertem.
+          </p>
+          <div class="skill-tech">
+            <span class="tech-badge">Canva</span>
+            <span class="tech-badge">Photoshop</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section" id="experience">
+    <div class="section-container">
+      <div class="section-header scroll-reveal">
+        <div class="section-label">// TRAJETÓRIA PROFISSIONAL</div>
+        <h2 class="section-title">Experiência</h2>
+        <p class="section-description">
+          Anos de experiência desenvolvendo soluções que impactam milhares de usuários 
+          e geram valor real para empresas de diversos segmentos.
+        </p>
+      </div>
+
+      <div class="experience-timeline">
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2024 - Presente</div>
+            <h3 class="timeline-title">Desenvolvedor Frontend</h3>
+            <div class="timeline-company">Quitech</div>
+            <p class="timeline-description">
+              Foco em desenvolvimento de interfaces responsivas e experiências de usuário 
+              excepcionais para startups em crescimento.
+            </p>
+            <ul class="timeline-achievements">
+              <li>Criou +30 interfaces responsivas que aumentaram conversão em média 45%</li>
+              <li>Implementou design systems reutilizáveis acelerando desenvolvimento em 60%</li>
+              <li>Desenvolveu PWAs com performance score superior a 95 no Lighthouse</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div class="timeline-item scroll-reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2020 - 2022</div>
+            <h3 class="timeline-title">Desenvolvedor Full Stack Senior</h3>
+            <div class="timeline-company">Digital Agency Pro</div>
+            <p class="timeline-description">
+              Desenvolvimento de soluções web completas para clientes corporativos, desde o 
+              planejamento até a entrega e manutenção.
+            </p>
+            <ul class="timeline-achievements">
+              <li>Desenvolveu 25+ aplicações web full stack usando Node.js e React</li>
+              <li>Implementou sistema de e-commerce que gerou R$ 2M em vendas no primeiro ano</li>
+              <li>Otimizou banco de dados MySQL reduzindo custos de infraestrutura em 40%</li>
+              <li>Contribuiu para aumento de 95% na satisfação dos clientes</li>
+            </ul>
+          </div>
+        </div> -->
+
+        <!-- <div class="timeline-item scroll-reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2018 - 2020</div>
+            <h3 class="timeline-title">Desenvolvedor Frontend</h3>
+            <div class="timeline-company">StartupHub Angola</div>
+            <p class="timeline-description">
+              Foco em desenvolvimento de interfaces responsivas e experiências de usuário 
+              excepcionais para startups em crescimento.
+            </p>
+            <ul class="timeline-achievements">
+              <li>Criou +30 interfaces responsivas que aumentaram conversão em média 45%</li>
+              <li>Implementou design systems reutilizáveis acelerando desenvolvimento em 60%</li>
+              <li>Desenvolveu PWAs com performance score superior a 95 no Lighthouse</li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="section-container">
+      <div class="section-header scroll-reveal">
+        <div class="section-label">// PORTFOLIO</div>
+        <h2 class="section-title">Projetos em Destaque</h2>
+        <p class="section-description">
+          Seleção de projetos que demonstram expertise técnica, visão de negócio 
+          e capacidade de entregar soluções de alto impacto.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card scroll-reveal">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <div class="project-type">E-Commerce Platform</div>
+              <h3 class="project-title">Sistema de Vendas Enterprise</h3>
+            </div>
+            <p class="project-description">
+              Plataforma completa de e-commerce com gerenciamento de inventário, processamento 
+              de pagamentos, painel administrativo e analytics em tempo real. Processa +10K 
+              transações mensais com 99.9% de uptime.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Stripe API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Ver Demo
+              </a>
+              <a href="https://github.com/PQuibuba18?tab=repositories" class="project-link">
+                <i class="fab fa-github"></i>
+                Código
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card scroll-reveal">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-chart-line"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <div class="project-type">Business Intelligence</div>
+              <h3 class="project-title">Dashboard Analytics Empresarial</h3>
+            </div>
+            <p class="project-description">
+              Dashboard interativo para visualização de KPIs empresariais com atualização em 
+              tempo real. Integração com múltiplas fontes de dados e geração automatizada de 
+              relatórios customizados.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Chart.js</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Ver Demo
+              </a>
+              <a href="https://github.com/PQuibuba18?tab=repositories" class="project-link">
+                <i class="fab fa-github"></i>
+                Código
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card scroll-reveal">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-tasks"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <div class="project-type">Project Management</div>
+              <h3 class="project-title">Sistema de Gestão de Projetos</h3>
+            </div>
+            <p class="project-description">
+              Aplicação colaborativa para gerenciamento de projetos com sistema de tarefas, 
+              timeline, alocação de recursos e comunicação em tempo real. Utilizado por +500 
+              usuários ativos.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Socket.io</span>
+            </div>
+            <div class="project-links">
+              <a href="" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Ver Demo
+              </a>
+              <a href="https://github.com/PQuibuba18?tab=repositories" class="project-link">
+                <i class="fab fa-github"></i>
+                Código
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="project-card scroll-reveal">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-users"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <div class="project-type">CRM System</div>
+              <h3 class="project-title">CRM de Vendas Inteligente</h3>
+            </div>
+            <p class="project-description">
+              Sistema CRM completo com automação de vendas, gestão de leads, pipeline visual 
+              e relatórios preditivos. Aumentou taxa de conversão dos clientes em média 35%.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Redux</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Ver Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i>
+                Código
+              </a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="project-card scroll-reveal">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-blog"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <div class="project-type">Content Management</div>
+              <h3 class="project-title">Plataforma CMS Headless</h3>
+            </div>
+            <p class="project-description">
+              CMS headless escalável com API GraphQL, editor rich text, controle de versão e 
+              sistema de permissões granular. Serve conteúdo para web, mobile e IoT.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">GraphQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Ver Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i>
+                Código
+              </a>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="project-card scroll-reveal">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <div class="project-type">Mobile App Backend</div>
+              <h3 class="project-title">API REST para App Delivery</h3>
+            </div>
+            <p class="project-description">
+              Backend robusto para aplicativo de delivery com geolocalização, processamento de 
+              pedidos em tempo real, integração com gateways de pagamento e notificações push.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Redis</span>
+              <span class="tech-tag">Firebase</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+                Ver Demo
+              </a>
+              <a href="#" class="project-link">
+                <i class="fab fa-github"></i>
+                Código
+              </a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="section-container">
+      <div class="section-header scroll-reveal">
+        <div class="section-label">// VAMOS CONVERSAR</div>
+        <h2 class="section-title">Entre em Contato</h2>
+      </div>
+
+      <div class="contact-container">
+        <p class="contact-description scroll-reveal">
+          Interessado em desenvolver um projeto inovador ou adicionar expertise técnica ao seu time? 
+          Estou disponível para novos desafios e oportunidades de colaboração. Vamos transformar 
+          sua visão em realidade.
+        </p>
+
+        <div class="contact-grid">
+          <a href="mailto:quibubamoises@gmail.com" class="contact-item scroll-reveal">
+            <div class="contact-item-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-item-title">Email Profissional</div>
+            <div class="contact-item-text">quibubamoises@gmail.com</div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/mois%C3%A9s-pinto-quibuba-82b579347/" target="_blank" class="contact-item scroll-reveal">
+            <div class="contact-item-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="contact-item-title">LinkedIn</div>
+            <div class="contact-item-text">linkedin.com/in/moisesquibuba</div>
+          </a>
+
+          <a href="https://github.com/PQuibuba18" target="_blank" class="contact-item scroll-reveal">
+            <div class="contact-item-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-item-title">GitHub</div>
+            <div class="contact-item-text">github.com/moisesquibuba</div>
+          </a>
+
+          <a href="tel:+244952030859" class="contact-item scroll-reveal">
+            <div class="contact-item-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="contact-item-title">WhatsApp</div>
+            <div class="contact-item-text">+244 952 030 859</div>
+          </a>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="mailto:quibubamoises@gmail.com" class="contact-cta scroll-reveal">
+            <i class="fas fa-paper-plane"></i>
+            Enviar Mensagem
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>&lt;MQ/&gt;</h3>
+          <p>
+            Desenvolvedor de Software especializado em criar soluções tecnológicas escaláveis 
+            que geram valor real para empresas e usuários.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/PQuibuba18" target="_blank" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mois%C3%A9s-pinto-quibuba-82b579347/" target="_blank" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:quibubamoises@gmail.com" class="social-link">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Expertise</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Recursos</h4>
+          <ul>
+            <!-- <li><a href="#">Blog Técnico</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Portfólio Completo</a></li> -->
+            <li><a href="/public/assets/cv/curriculo-vitae-DEV-moisesQuibuba.pdf">Download CV</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Moisés Quibuba. Todos os direitos reservados.</div>
+        <!-- <div>Desenvolvido com <a href="#">Node.js</a> & <a href="#">React</a></div> -->
+      </div>
+    </div>
+  </footer>
+
+  <script src="/public/assets/js/app.js">
+  
+  </script>
+</body>
+</html>
