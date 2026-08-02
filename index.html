@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Moisés Quibuba - Desenvolvedor Full Stack em crescimento. Criação de sites, sistemas web e interfaces modernas com React, Node.js, JavaScript, PHP e MySQL."
+    />
+    <title>Moisés Quibuba | Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for Professional Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body class="dark">
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="header-container">
+        <a href="#home" class="logo">&lt;MQ/&gt;</a>
+
+        <nav class="nav-desktop">
+          <a href="#home">Home</a>
+          <a href="#skills">Expertise</a>
+          <a href="#experience">Experiência</a>
+          <a href="#projects">Projetos</a>
+          <a href="#contact">Contato</a>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Alternar tema"
+          >
+            <i class="fas fa-sun"></i>
+          </button>
+          <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="nav-mobile" id="navMobile">
+      <a href="#home"><i class="fas fa-home"></i> Home</a>
+      <a href="#skills"><i class="fas fa-code"></i> Expertise</a>
+      <a href="#experience"><i class="fas fa-briefcase"></i> Experiência</a>
+      <a href="#projects"><i class="fas fa-folder-open"></i> Projetos</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Contato</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="fade-in">
+            Moisés Quibuba,
+            <span class="name">Quibuba</span>
+          </h1>
+          <p class="title fade-in delay-1">
+            Desenvolvedor Full Stack | React • Node.js • PHP • MySQL
+          </p>
+          <p class="hero-description fade-in delay-2">
+            Desenvolvedor focado na criação de sites modernos, sistemas web e
+            soluções digitais funcionais. Tenho experiência prática com projetos
+            próprios, freelance e estágio curricular em programação, sempre
+            buscando evolução técnica e resultados reais.
+          </p>
+
+          <div class="hero-tags fade-in delay-3">
+            <span class="hero-tag">Projetos reais entregues</span>
+            <span class="hero-tag">Estágio + freelance</span>
+            <span class="hero-tag">Aprendizado contínuo</span>
+          </div>
+
+          <div class="hero-buttons fade-in delay-4">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fas fa-folder-open"></i>
+              Ver Projetos
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-envelope"></i>
+              Entre em Contato
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <img src="assets/moises.jpg" alt="Moisés Quibuba" class="portrait-photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <div class="section-container">
+        <div class="section-header scroll-reveal">
+          <div class="section-label">// EXPERTISE TÉCNICA</div>
+          <h2 class="section-title">Stack Tecnológico</h2>
+          <p class="section-description">
+            Tecnologias que utilizo no desenvolvimento de interfaces modernas,
+            sistemas web e soluções funcionais.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card scroll-reveal">
+            <div class="skill-icon">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <h3 class="skill-title">Desenvolvedor Backend</h3>
+            <p class="skill-description">
+              Desenvolvimento de APIs, regras de negócio, autenticação e
+              integração entre sistema e base de dados.
+            </p>
+            <div class="skill-tech">
+              <span class="tech-badge">Node.js</span>
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">Express</span>
+            </div>
+          </div>
+
+          <div class="skill-card scroll-reveal">
+            <div class="skill-icon">
+              <i class="fab fa-react"></i>
+            </div>
+            <h3 class="skill-title">Desenvolvedor Frontend</h3>
+            <p class="skill-description">
+              Criação de interfaces modernas, responsivas e organizadas com foco
+              em boa experiência do usuário.
+            </p>
+            <div class="skill-tech">
+              <span class="tech-badge">React</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">Hooks</span>
+            </div>
+          </div>
+
+          <div class="skill-card scroll-reveal">
+            <div class="skill-icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <h3 class="skill-title">JavaScript Moderno</h3>
+            <p class="skill-description">
+              Expertise em ES6+, programação assíncrona, manipulação de dados e
+              desenvolvimento de aplicações complexas com JavaScript vanilla e
+              frameworks modernos.
+            </p>
+            <div class="skill-tech">
+              <span class="tech-badge">ES6+</span>
+              <span class="tech-badge">TypeScript</span>
+              <span class="tech-badge">Async/Await</span>
+            </div>
+          </div>
+
+          <div class="skill-card scroll-reveal">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="skill-title">Banco de Dados</h3>
+            <p class="skill-description">
+              Modelagem e manipulação de dados para sistemas administrativos e
+              aplicações web.
+            </p>
+            <div class="skill-tech">
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-card scroll-reveal">
+            <div class="skill-icon">
+              <i class="fas fa-code-branch"></i>
+            </div>
+            <h3 class="skill-title">DevOps & Tools</h3>
+            <p class="skill-description">
+              Organização de código, versionamento e fluxo moderno de
+              desenvolvimento.
+            </p>
+            <div class="skill-tech">
+              <span class="tech-badge">Git</span>
+              <span class="tech-badge">GitHub</span>
+              <span class="tech-badge">VS Code</span>
+              <span class="tech-badge">Docker</span>
+            </div>
+          </div>
+
+          <div class="skill-card scroll-reveal">
+            <div class="skill-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3 class="skill-title">UI/UX Design</h3>
+            <p class="skill-description">
+              Design de interfaces intuitivas e acessíveis, com prototipagem e
+              identidade visual antes de partir para o código.
+            </p>
+            <div class="skill-tech">
+              <span class="tech-badge">Canva</span>
+              <span class="tech-badge">Photoshop</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+      <div class="section-container">
+        <div class="section-header scroll-reveal">
+          <div class="section-label">// TRAJETÓRIA PROFISSIONAL</div>
+          <h2 class="section-title">Experiência</h2>
+          <p class="section-description">
+            Vivência prática através de estágio curricular, freelancing e
+            desenvolvimento de projetos independentes.
+          </p>
+        </div>
+
+        <div class="experience-timeline">
+          <div class="timeline-item scroll-reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2026 - Atual</div>
+              <h3 class="timeline-title">Estagiário de Programação</h3>
+              <div class="timeline-company">Mundo da Tecnologia</div>
+              <p class="timeline-description">
+                Participação em atividades ligadas ao desenvolvimento web,
+                manutenção de sistemas e aplicação prática de conhecimentos de
+                programação.
+              </p>
+
+              <ul class="timeline-achievements">
+                <li>Apoio em tarefas de front-end e back-end</li>
+                <li>Correções e melhorias em sistemas</li>
+                <li>Aprendizado em ambiente profissional</li>
+                <li>Contato com projetos reais</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item scroll-reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Atual</div>
+              <h3 class="timeline-title">Desenvolvedor Full Stack</h3>
+              <div class="timeline-company">GENI AI</div>
+              <p class="timeline-description">
+                Desenvolvimento de uma plataforma de atendimento automatizado via
+                WhatsApp para negócios locais, com arquitetura multi-tenant.
+              </p>
+              <ul class="timeline-achievements">
+                <li>Integração entre n8n, PostgreSQL e Evolution API</li>
+                <li>Desenho de fluxos de automação de atendimento</li>
+                <li>Provisionamento de novos negócios na plataforma</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item scroll-reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2023 - Atual</div>
+              <h3 class="timeline-title">Desenvolvedor Freelancer</h3>
+              <div class="timeline-company">Projetos Independentes</div>
+              <p class="timeline-description">
+                Criação de websites, landing pages e pequenos sistemas para
+                prática e clientes.
+              </p>
+              <ul class="timeline-achievements">
+                <li>Sites responsivos</li>
+                <li>Formulários funcionais</li>
+                <li>Integração com banco de dados</li>
+                <li>Personalização visual</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="section-container">
+        <div class="section-header scroll-reveal">
+          <div class="section-label">// PORTFOLIO</div>
+          <h2 class="section-title">Projetos em Destaque</h2>
+          <p class="section-description">
+            Projetos que demonstram minha evolução técnica e capacidade de
+            transformar ideias em soluções funcionais.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card scroll-reveal">
+            <div class="project-image">
+              <div class="project-image-placeholder">QT</div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <div class="project-type">E-commerce & Admin</div>
+                <h3 class="project-title">QUITECH</h3>
+              </div>
+              <p class="project-description">
+                Loja virtual com painel administrativo para o mercado angolano,
+                com gestão de produtos, pedidos e utilizadores.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">Painel Admin</span>
+              </div>
+              <div class="project-links">
+                <!-- Assim que estiver no ar: <a href="URL_NETLIFY" target="_blank" rel="noopener" class="project-link"><i class="fas fa-arrow-up-right-from-square"></i>Ver Projeto</a> -->
+                <a href="#" class="project-link is-disabled" aria-disabled="true">
+                  <i class="fas fa-clock"></i>
+                  Em breve
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card scroll-reveal">
+            <div class="project-image">
+              <div class="project-image-placeholder">ZL</div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <div class="project-type">Landing Page & Gestão</div>
+                <h3 class="project-title">Zé Ligeiro Fretes</h3>
+              </div>
+              <p class="project-description">
+                Landing page e sistema de gestão para uma transportadora do Rio
+                de Janeiro, organizando fretes e pedidos.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Landing Page</span>
+                <span class="tech-tag">Sistema de Gestão</span>
+              </div>
+              <div class="project-links">
+                <!-- Assim que estiver no ar: <a href="URL_NETLIFY" target="_blank" rel="noopener" class="project-link"><i class="fas fa-arrow-up-right-from-square"></i>Ver Projeto</a> -->
+                <a href="#" class="project-link is-disabled" aria-disabled="true">
+                  <i class="fas fa-clock"></i>
+                  Em breve
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card scroll-reveal">
+            <div class="project-image">
+              <div class="project-image-placeholder">TP</div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <div class="project-type">Landing Page & Pedidos</div>
+                <h3 class="project-title">Thais Polônia Tortas Premium</h3>
+              </div>
+              <p class="project-description">
+                Site para uma confeitaria, com catálogo de tortas e pedidos
+                encaminhados direto para o WhatsApp.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">WhatsApp</span>
+                <span class="tech-tag">Landing Page</span>
+              </div>
+              <div class="project-links">
+                <!-- Assim que estiver no ar: <a href="URL_NETLIFY" target="_blank" rel="noopener" class="project-link"><i class="fas fa-arrow-up-right-from-square"></i>Ver Projeto</a> -->
+                <a href="#" class="project-link is-disabled" aria-disabled="true">
+                  <i class="fas fa-clock"></i>
+                  Em breve
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card scroll-reveal">
+            <div class="project-image">
+              <div class="project-image-placeholder">BS</div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <div class="project-type">Landing Page & Conversão</div>
+                <h3 class="project-title">Brinquedos Salvadores</h3>
+              </div>
+              <p class="project-description">
+                Site profissional de conversão via WhatsApp para um negócio de
+                locação de brinquedos infláveis.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">WhatsApp</span>
+                <span class="tech-tag">Conversão</span>
+              </div>
+              <div class="project-links">
+                <!-- Assim que estiver no ar: <a href="URL_NETLIFY" target="_blank" rel="noopener" class="project-link"><i class="fas fa-arrow-up-right-from-square"></i>Ver Projeto</a> -->
+                <a href="#" class="project-link is-disabled" aria-disabled="true">
+                  <i class="fas fa-clock"></i>
+                  Em breve
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card scroll-reveal">
+            <div class="project-image">
+              <div class="project-image-placeholder">OC</div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <div class="project-type">E-commerce de Moda</div>
+                <h3 class="project-title">Octávia Costa Moda</h3>
+              </div>
+              <p class="project-description">
+                Loja virtual para uma marca de moda angolana, com catálogo de
+                peças e apresentação da coleção.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">E-commerce</span>
+              </div>
+              <div class="project-links">
+                <!-- Assim que estiver no ar: <a href="URL_NETLIFY" target="_blank" rel="noopener" class="project-link"><i class="fas fa-arrow-up-right-from-square"></i>Ver Projeto</a> -->
+                <a href="#" class="project-link is-disabled" aria-disabled="true">
+                  <i class="fas fa-clock"></i>
+                  Em breve
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card scroll-reveal">
+            <div class="project-image">
+              <div class="project-image-placeholder">MV</div>
+            </div>
+            <div class="project-content">
+              <div class="project-header">
+                <div class="project-type">Ferramenta de Desenvolvimento</div>
+                <h3 class="project-title">Motor Visual de Banco de Dados</h3>
+              </div>
+              <p class="project-description">
+                Sistema para modelagem, execução e versionamento de banco de
+                dados, com interface visual de arrastar e soltar.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Modelagem de Dados</span>
+                <span class="tech-tag">Drag-and-Drop</span>
+                <span class="tech-tag">Versionamento</span>
+              </div>
+              <div class="project-links">
+                <!-- Assim que estiver no ar: <a href="URL_NETLIFY" target="_blank" rel="noopener" class="project-link"><i class="fas fa-arrow-up-right-from-square"></i>Ver Projeto</a> -->
+                <a href="#" class="project-link is-disabled" aria-disabled="true">
+                  <i class="fas fa-clock"></i>
+                  Em breve
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="section-container">
+        <div class="section-header scroll-reveal">
+          <div class="section-label">// VAMOS CONVERSAR</div>
+          <h2 class="section-title">Entre em Contato</h2>
+        </div>
+
+        <div class="contact-container">
+          <p class="contact-description scroll-reveal">
+            Estou disponível para oportunidades de estágio, vagas júnior,
+            freelance e colaboração em projetos web. Se precisa de alguém
+            comprometido e em evolução constante, entre em contato.
+          </p>
+
+          <div class="contact-grid">
+            <a
+              href="mailto:quibubamoises@gmail.com"
+              class="contact-item scroll-reveal"
+            >
+              <div class="contact-item-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-item-title">Email Profissional</div>
+              <div class="contact-item-text">quibubamoises@gmail.com</div>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/mois%C3%A9s-pinto-quibuba-82b579347/"
+              target="_blank"
+              class="contact-item scroll-reveal"
+            >
+              <div class="contact-item-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="contact-item-title">LinkedIn</div>
+              <div class="contact-item-text">linkedin.com/in/moisesquibuba</div>
+            </a>
+
+            <a
+              href="https://github.com/PQuibuba18"
+              target="_blank"
+              class="contact-item scroll-reveal"
+            >
+              <div class="contact-item-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="contact-item-title">GitHub</div>
+              <div class="contact-item-text">github.com/moisesquibuba</div>
+            </a>
+
+            <a href="tel:+244952030859" class="contact-item scroll-reveal">
+              <div class="contact-item-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div class="contact-item-title">WhatsApp</div>
+              <div class="contact-item-text">+244 952 030 859</div>
+            </a>
+          </div>
+
+          <div style="text-align: center; margin-top: 3rem">
+            <a
+              href="mailto:quibubamoises@gmail.com"
+              class="contact-cta scroll-reveal"
+            >
+              <i class="fas fa-paper-plane"></i>
+              Enviar Mensagem
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>&lt;MQ/&gt;</h3>
+            <p>
+              Desenvolvedor Full Stack em crescimento, focado em criar soluções
+              digitais modernas e funcionais.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://github.com/PQuibuba18"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mois%C3%A9s-pinto-quibuba-82b579347/"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="mailto:quibubamoises@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#skills">Expertise</a></li>
+              <li><a href="#experience">Experiência</a></li>
+              <li><a href="#projects">Projetos</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Recursos</h4>
+            <ul>
+              <!-- <li><a href="#">Blog Técnico</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Portfólio Completo</a></li> -->
+              <li>
+                <a href="curriculo-vitae-DEV-moisesQuibuba.pdf">Download CV</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>© 2026 Moisés Quibuba. Todos os direitos reservados.</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
