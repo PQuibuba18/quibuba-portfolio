@@ -86,24 +86,6 @@
       });
     });
 
-    // ==================== TYPING EFFECT (Optional) ====================
-    const heroTitle = document.querySelector('.hero-content h1');
-    if (heroTitle) {
-      const text = heroTitle.textContent;
-      heroTitle.textContent = '';
-      let index = 0;
-      
-      function type() {
-        if (index < text.length) {
-          heroTitle.textContent += text.charAt(index);
-          index++;
-          setTimeout(type, 50);
-        }
-      }
-      
-      setTimeout(type, 500);
-    }
-
     // ==================== ACTIVE NAV LINK ====================
     const sections = document.querySelectorAll('section[id]');
     const navLinksDesktop = document.querySelectorAll('.nav-desktop a');

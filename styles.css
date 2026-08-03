@@ -324,8 +324,6 @@
 
     .btn-primary:hover {
       background: #39a89d;
-      box-shadow: 0 6px 16px rgba(47, 145, 135, 0.4);
-      transform: translateY(-2px);
     }
 
     body.light .btn-primary:hover {
@@ -448,8 +446,6 @@
     }
 
     .skill-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
       border-color: var(--accent-primary);
     }
 
@@ -466,8 +462,7 @@
     }
 
     .skill-card:hover .skill-icon {
-      background: var(--accent-primary);
-      color: white;
+      color: var(--accent-primary);
     }
 
     .skill-title {
@@ -543,8 +538,6 @@
     }
 
     .timeline-content:hover {
-      transform: translateX(8px);
-      box-shadow: var(--shadow-md);
       border-color: var(--accent-secondary);
     }
 
@@ -614,8 +607,6 @@
     }
 
     .project-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow-lg);
       border-color: var(--accent-primary);
     }
 
@@ -780,8 +771,6 @@
     }
 
     .contact-item:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
       border-color: var(--accent-primary);
     }
 
@@ -796,11 +785,6 @@
       margin: 0 auto 1.25rem;
       font-size: 1.75rem;
       color: var(--accent-primary);
-    }
-
-    .contact-item:hover .contact-item-icon {
-      background: var(--accent-primary);
-      color: white;
     }
 
     .contact-item-title {
@@ -821,19 +805,17 @@
       gap: 0.75rem;
       padding: 1rem 2.5rem;
       background: var(--accent-primary);
-      color: white;
+      color: #f2f0eb;
       border-radius: 6px;
       font-size: 1rem;
       font-weight: 600;
       text-decoration: none;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 12px rgba(46, 160, 67, 0.3);
+      box-shadow: 0 4px 12px rgba(47, 145, 135, 0.3);
     }
 
     .contact-cta:hover {
-      background: #26843a;
-      box-shadow: 0 6px 16px rgba(46, 160, 67, 0.4);
-      transform: translateY(-2px);
+      background: #39a89d;
     }
 
     /* ==================== FOOTER ==================== */
@@ -893,8 +875,7 @@
     .social-link:hover {
       background: var(--accent-primary);
       border-color: var(--accent-primary);
-      color: white;
-      transform: translateY(-2px);
+      color: #f2f0eb;
     }
 
     .footer-section h4 {
@@ -1013,7 +994,7 @@
     @keyframes fadeInUp {
       from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(12px);
       }
       to {
         opacity: 1;
@@ -1023,7 +1004,7 @@
 
     .fade-in {
       opacity: 0;
-      animation: fadeInUp 0.6s ease forwards;
+      animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
 
     .delay-1 { animation-delay: 0.1s; }
@@ -1034,8 +1015,8 @@
     /* Scroll Reveal */
     .scroll-reveal {
       opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.6s ease;
+      transform: translateY(14px);
+      transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     .scroll-reveal.revealed {
