@@ -512,6 +512,15 @@
       background: var(--border-default);
     }
 
+    .timeline-progress-line {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2px;
+      height: calc(var(--timeline-progress) * 100%);
+      background: var(--accent-primary);
+    }
+
     .timeline-item {
       position: relative;
       padding-left: 3rem;
@@ -1022,4 +1031,88 @@
     .scroll-reveal.revealed {
       opacity: 1;
       transform: translateY(0);
+    }
+    /* ==================== ACCESSIBILITY: MOTION & FOCUS ==================== */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--accent-primary);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    /* ==================== SCROLL PROGRESS ==================== */
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 2px;
+      width: 0%;
+      background: var(--accent-primary);
+      z-index: 1100;
+      transition: width 0.1s linear;
+    }
+
+    /* ==================== ACTIVE NAV INDICATOR ==================== */
+    .nav-desktop a.active {
+      color: var(--text-primary);
+    }
+
+    .nav-desktop a.active::after {
+      width: 100%;
+    }
+
+    /* ==================== HERO PORTRAIT REVEAL ==================== */
+    @keyframes portraitReveal {
+      from {
+        clip-path: inset(0 0 100% 0);
+        opacity: 0;
+      }
+      to {
+        clip-path: inset(0 0 0% 0);
+        opacity: 1;
+      }
+    }
+
+    .hero-visual .portrait-frame {
+      animation: portraitReveal 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+    }
+
+    /* ==================== SECTION TITLE — SPLIT WORD REVEAL ==================== */
+    .section-title.split-ready .word {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .scroll-reveal.revealed .section-title.split-ready .word {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ==================== TIMELINE DRAW-ON-SCROLL ==================== */
+    .experience-timeline {
+      --timeline-progress: 0;
+    }
+
+    /* ==================== CARD TILT SMOOTHING ==================== */
+    .project-card,
+    .skill-card {
+      transition: border-color 0.3s ease, transform 0.15s ease-out;
+    }
+
+    /* ==================== THEME TRANSITION (VIEW TRANSITIONS API) ==================== */
+    ::view-transition-old(root),
+    ::view-transition-new(root) {
+      animation: none;
+      mix-blend-mode: normal;
     }

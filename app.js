@@ -2,19 +2,51 @@
     const themeToggle = document.getElementById('themeToggle');
     const body = document.body;
     const icon = themeToggle.querySelector('i');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     // Load saved theme
     const savedTheme = localStorage.getItem('theme') || 'dark';
     body.classList.add(savedTheme);
     icon.className = savedTheme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
 
-    themeToggle.addEventListener('click', () => {
+    function applyTheme() {
       body.classList.toggle('light');
       body.classList.toggle('dark');
-      
+
       const newTheme = body.classList.contains('light') ? 'light' : 'dark';
       icon.className = newTheme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
       localStorage.setItem('theme', newTheme);
+    }
+
+    themeToggle.addEventListener('click', (e) => {
+      if (!document.startViewTransition || prefersReducedMotion) {
+        applyTheme();
+        return;
+      }
+
+      const x = e.clientX;
+      const y = e.clientY;
+      const endRadius = Math.hypot(
+        Math.max(x, window.innerWidth - x),
+        Math.max(y, window.innerHeight - y)
+      );
+
+      const transition = document.startViewTransition(() => applyTheme());
+      transition.ready.then(() => {
+        document.documentElement.animate(
+          {
+            clipPath: [
+              `circle(0px at ${x}px ${y}px)`,
+              `circle(${endRadius}px at ${x}px ${y}px)`
+            ]
+          },
+          {
+            duration: 500,
+            easing: 'ease-in-out',
+            pseudoElement: '::view-transition-new(root)'
+          }
+        );
+      });
     });
 
     // ==================== MOBILE MENU ====================
