@@ -278,24 +278,6 @@
       max-width: 540px;
     }
 
-    .hero-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.625rem;
-      margin-bottom: 2.5rem;
-    }
-
-    .hero-tag {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 0.75rem;
-      color: var(--text-secondary);
-      border: 1px solid var(--border-default);
-      background: var(--bg-secondary);
-      padding: 0.4rem 0.75rem;
-      border-radius: 4px;
-      letter-spacing: 0.2px;
-    }
-
     .hero-buttons {
       display: flex;
       gap: 1rem;
@@ -416,7 +398,8 @@
 
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
+      align-items: start;
       gap: 1.5rem;
     }
 
@@ -449,20 +432,12 @@
       border-color: var(--accent-primary);
     }
 
-    .skill-icon {
-      width: 48px;
-      height: 48px;
-      background: var(--bg-tertiary);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1.25rem;
-      font-size: 1.5rem;
-    }
-
-    .skill-card:hover .skill-icon {
+    .skill-index {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8125rem;
       color: var(--accent-primary);
+      letter-spacing: 0.5pt;
+      margin-bottom: 1.25rem;
     }
 
     .skill-title {
@@ -601,7 +576,7 @@
     /* ==================== PROJECTS SECTION ==================== */
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
     }
 
@@ -683,7 +658,6 @@
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
-      margin-bottom: 1.5rem;
     }
 
     .tech-tag {
@@ -695,49 +669,6 @@
       color: var(--text-secondary);
       font-family: 'JetBrains Mono', monospace;
       font-weight: 500;
-    }
-
-    .project-links {
-      display: flex;
-      gap: 1rem;
-      padding-top: 1rem;
-      border-top: 1px solid var(--border-muted);
-    }
-
-    .project-link {
-      flex: 1;
-      padding: 0.75rem;
-      background: transparent;
-      border: 1px solid var(--border-default);
-      border-radius: 6px;
-      color: var(--text-primary);
-      text-decoration: none;
-      font-size: 0.875rem;
-      font-weight: 600;
-      text-align: center;
-      transition: all 0.3s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-    }
-
-    .project-link:hover {
-      background: var(--accent-primary);
-      border-color: var(--accent-primary);
-      color: #f2f0eb;
-    }
-
-    .project-link.is-disabled {
-      color: var(--text-tertiary);
-      cursor: default;
-      pointer-events: none;
-    }
-
-    .project-link.is-disabled:hover {
-      background: transparent;
-      border-color: var(--border-default);
-      color: var(--text-tertiary);
     }
 
     /* ==================== CONTACT SECTION ==================== */
@@ -761,51 +692,47 @@
       line-height: 1.7;
     }
 
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
+    .contact-list {
+      display: flex;
+      flex-direction: column;
       margin-bottom: 3rem;
+      border-top: 1px solid var(--border-default);
+      text-align: left;
     }
 
-    .contact-item {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border-default);
-      border-radius: 8px;
-      padding: 2rem;
-      transition: all 0.3s ease;
+    .contact-row {
+      display: flex;
+      align-items: baseline;
+      gap: 1.5rem;
+      padding: 1.25rem 0.25rem;
+      border-bottom: 1px solid var(--border-default);
       text-decoration: none;
       color: inherit;
-      display: block;
+      transition: border-color 0.3s ease;
     }
 
-    .contact-item:hover {
+    .contact-row:hover {
       border-color: var(--accent-primary);
     }
 
-    .contact-item-icon {
-      width: 56px;
-      height: 56px;
-      background: var(--bg-tertiary);
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 1.25rem;
-      font-size: 1.75rem;
-      color: var(--accent-primary);
+    .contact-row-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.5pt;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      width: 90px;
+      flex-shrink: 0;
     }
 
-    .contact-item-title {
-      font-size: 1rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
+    .contact-row-value {
+      font-size: 1.0625rem;
       color: var(--text-primary);
+      transition: color 0.3s ease;
     }
 
-    .contact-item-text {
-      font-size: 0.9375rem;
-      color: var(--text-secondary);
+    .contact-row:hover .contact-row-value {
+      color: var(--accent-primary);
     }
 
     .contact-cta {
@@ -861,32 +788,6 @@
       margin-bottom: 1.5rem;
     }
 
-    .social-links {
-      display: flex;
-      gap: 1rem;
-    }
-
-    .social-link {
-      width: 40px;
-      height: 40px;
-      background: var(--bg-tertiary);
-      border: 1px solid var(--border-default);
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-primary);
-      text-decoration: none;
-      transition: all 0.3s ease;
-      font-size: 1.125rem;
-    }
-
-    .social-link:hover {
-      background: var(--accent-primary);
-      border-color: var(--accent-primary);
-      color: #f2f0eb;
-    }
-
     .footer-section h4 {
       font-size: 0.9375rem;
       font-weight: 600;
@@ -930,6 +831,11 @@
 
     /* ==================== RESPONSIVE ==================== */
     @media (max-width: 1024px) {
+      .skills-grid,
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
       .hero-container {
         grid-template-columns: 1fr;
         gap: 3rem;
@@ -994,8 +900,9 @@
         text-align: center;
       }
 
-      .contact-grid {
-        grid-template-columns: 1fr;
+      .contact-row {
+        flex-direction: column;
+        gap: 0.35rem;
       }
     }
 
